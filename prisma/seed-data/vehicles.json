@@ -1,0 +1,2433 @@
+{
+  "_notice": "SAMPLE / ILLUSTRATIVE DATA. Figures are approximate, for demonstration only, and must not be presented as official manufacturer or agency data. Units: USD, hp, Nm, mm, L, km/l, km, kWh/100km.",
+  "makes": [
+    {
+      "slug": "toyota",
+      "name": "Toyota",
+      "country": "Japan"
+    },
+    {
+      "slug": "honda",
+      "name": "Honda",
+      "country": "Japan"
+    },
+    {
+      "slug": "hyundai",
+      "name": "Hyundai",
+      "country": "South Korea"
+    },
+    {
+      "slug": "kia",
+      "name": "Kia",
+      "country": "South Korea"
+    },
+    {
+      "slug": "tesla",
+      "name": "Tesla",
+      "country": "United States"
+    },
+    {
+      "slug": "ford",
+      "name": "Ford",
+      "country": "United States"
+    },
+    {
+      "slug": "volkswagen",
+      "name": "Volkswagen",
+      "country": "Germany"
+    },
+    {
+      "slug": "mazda",
+      "name": "Mazda",
+      "country": "Japan"
+    },
+    {
+      "slug": "nissan",
+      "name": "Nissan",
+      "country": "Japan"
+    }
+  ],
+  "models": [
+    {
+      "slug": "toyota-corolla",
+      "make": "toyota",
+      "name": "Corolla",
+      "bodyType": "SEDAN",
+      "modelYear": 2025,
+      "segment": "Compact sedan",
+      "isPopular": true,
+      "summary": "A sensible, efficient compact sedan with a strong reputation for reliability.",
+      "image": {
+        "url": "/images/cars/toyota-corolla.jpg",
+        "author": "MercurySable99",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Toyota_Corolla_LE,_front_right,_07-13-2024.jpg"
+      },
+      "review": {
+        "rating": 7.4,
+        "verdict": "An easy, efficient and dependable compact sedan that is cheap to own.",
+        "pros": [
+          "Excellent fuel economy",
+          "Strong resale value",
+          "Standard driver-assist suite"
+        ],
+        "cons": [
+          "Uninspiring acceleration",
+          "Noisy engine under load",
+          "Modest rear legroom"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4630,
+          "widthMm": 1780,
+          "heightMm": 1435,
+          "wheelbaseMm": 2700,
+          "groundClearanceMm": 135,
+          "cargoL": 371,
+          "fuelTankL": 50,
+          "curbWeightKg": 1350
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 10,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 120,
+          "annualInsurance": 1900,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 60
+        }
+      },
+      "variants": [
+        {
+          "slug": "toyota-corolla-le",
+          "name": "LE",
+          "price": 23000,
+          "fuelType": "GASOLINE",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder",
+            "displacementCc": 1987,
+            "powerHp": 169,
+            "torqueNm": 205,
+            "zeroToHundredS": 8.6,
+            "topSpeedKmh": 190,
+            "efficiencyKmpl": 14.9
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "toyota-corolla-xse",
+          "name": "XSE",
+          "price": 28000,
+          "fuelType": "GASOLINE",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder",
+            "displacementCc": 1987,
+            "powerHp": 169,
+            "torqueNm": 205,
+            "zeroToHundredS": 8.4,
+            "topSpeedKmh": 190,
+            "efficiencyKmpl": 13.6
+          },
+          "spec": {
+            "curbWeightKg": 1390
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "honda-civic",
+      "make": "honda",
+      "name": "Civic",
+      "bodyType": "SEDAN",
+      "modelYear": 2025,
+      "segment": "Compact sedan",
+      "isPopular": true,
+      "summary": "The benchmark compact: refined, roomy and fun, now offered with a punchy hybrid.",
+      "image": {
+        "url": "/images/cars/honda-civic.jpg",
+        "author": "Elise240SX",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Honda_Civic_Sport_Touring_Hybrid_in_Blue_Lagoon,_front_left,_2024-09-24.jpg"
+      },
+      "review": {
+        "rating": 8.4,
+        "verdict": "Refined, roomy and genuinely enjoyable to drive, with a standout hybrid option.",
+        "pros": [
+          "Engaging, composed handling",
+          "Spacious cabin and trunk",
+          "Excellent hybrid powertrain"
+        ],
+        "cons": [
+          "Base engine feels lethargic",
+          "Hybrid trims get pricey",
+          "Low seating position"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4674,
+          "widthMm": 1801,
+          "heightMm": 1415,
+          "wheelbaseMm": 2735,
+          "groundClearanceMm": 135,
+          "cargoL": 419,
+          "fuelTankL": 47,
+          "curbWeightKg": 1330
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 5,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 10,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 130,
+          "annualInsurance": 2000,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 58
+        }
+      },
+      "variants": [
+        {
+          "slug": "honda-civic-lx",
+          "name": "LX",
+          "price": 25000,
+          "fuelType": "GASOLINE",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder",
+            "displacementCc": 1996,
+            "powerHp": 150,
+            "torqueNm": 180,
+            "zeroToHundredS": 8.8,
+            "topSpeedKmh": 200,
+            "efficiencyKmpl": 15.3
+          },
+          "safety": {
+            "blindSpotMonitor": false
+          },
+          "features": [
+            "carplay",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "honda-civic-sport-touring-hybrid",
+          "name": "Sport Touring Hybrid",
+          "price": 32800,
+          "fuelType": "HYBRID",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder hybrid",
+            "displacementCc": 1993,
+            "powerHp": 200,
+            "torqueNm": 315,
+            "zeroToHundredS": 6.8,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 20
+          },
+          "spec": {
+            "fuelTankL": 40,
+            "curbWeightKg": 1460
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hyundai-elantra",
+      "make": "hyundai",
+      "name": "Elantra",
+      "bodyType": "SEDAN",
+      "modelYear": 2025,
+      "segment": "Compact sedan",
+      "isPopular": false,
+      "summary": "Bold styling, a long warranty and a superb hybrid make it a smart value pick.",
+      "image": {
+        "url": "/images/cars/hyundai-elantra.jpg",
+        "author": "Elise240SX",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Hyundai_Elantra_Preferred_in_Abyss_Black,_front_left,_2024-09-29.jpg"
+      },
+      "review": {
+        "rating": 7.9,
+        "verdict": "A feature-rich value champion, especially in frugal hybrid form.",
+        "pros": [
+          "Industry-leading warranty",
+          "Hybrid is exceptionally frugal",
+          "Lots of tech for the money"
+        ],
+        "cons": [
+          "Firm, busy ride",
+          "Hard plastics in the cabin",
+          "Weak resale value"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4710,
+          "widthMm": 1825,
+          "heightMm": 1415,
+          "wheelbaseMm": 2720,
+          "groundClearanceMm": 140,
+          "cargoL": 405,
+          "fuelTankL": 47,
+          "curbWeightKg": 1300
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 8,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": false
+        },
+        "cost": {
+          "serviceIntervalKm": 12000,
+          "serviceCost": 110,
+          "annualInsurance": 1900,
+          "warrantyYears": 5,
+          "warrantyKm": 96500,
+          "resaleValuePct5y": 48
+        }
+      },
+      "variants": [
+        {
+          "slug": "hyundai-elantra-sel",
+          "name": "SEL",
+          "price": 23500,
+          "fuelType": "GASOLINE",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder",
+            "displacementCc": 1999,
+            "powerHp": 147,
+            "torqueNm": 179,
+            "zeroToHundredS": 8.9,
+            "topSpeedKmh": 195,
+            "efficiencyKmpl": 14.9
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "hyundai-elantra-hybrid-limited",
+          "name": "Hybrid Limited",
+          "price": 30000,
+          "fuelType": "HYBRID",
+          "transmission": "DCT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "1.6L 4-cylinder hybrid",
+            "displacementCc": 1580,
+            "powerHp": 139,
+            "torqueNm": 265,
+            "zeroToHundredS": 8.5,
+            "topSpeedKmh": 185,
+            "efficiencyKmpl": 20.8
+          },
+          "spec": {
+            "fuelTankL": 42,
+            "curbWeightKg": 1400
+          },
+          "safety": {
+            "adaptiveCruise": true
+          },
+          "features": [
+            "carplay",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "ledHeadlights",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "toyota-camry",
+      "make": "toyota",
+      "name": "Camry",
+      "bodyType": "SEDAN",
+      "modelYear": 2025,
+      "segment": "Midsize sedan",
+      "isPopular": true,
+      "summary": "Now hybrid-only, pairing outstanding efficiency with comfort and dependability.",
+      "image": {
+        "url": "/images/cars/toyota-camry.png",
+        "author": "Autosdeprimera",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Toyota_Camry_Hybrid_XSE_AWD_(United_States)_front_view.png"
+      },
+      "review": {
+        "rating": 8.3,
+        "verdict": "A comfortable, frugal family sedan that is very hard to fault as an ownership proposition.",
+        "pros": [
+          "Superb fuel economy across the range",
+          "Comfortable, quiet ride",
+          "Strong standard safety tech"
+        ],
+        "cons": [
+          "Engine drones under hard acceleration",
+          "Rear headroom is tight for tall adults",
+          "No plug-in option"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4920,
+          "widthMm": 1840,
+          "heightMm": 1445,
+          "wheelbaseMm": 2825,
+          "groundClearanceMm": 145,
+          "cargoL": 428,
+          "fuelTankL": 50,
+          "curbWeightKg": 1620
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 5,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 10,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 140,
+          "annualInsurance": 2100,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 60
+        }
+      },
+      "variants": [
+        {
+          "slug": "toyota-camry-le",
+          "name": "LE",
+          "price": 29000,
+          "fuelType": "HYBRID",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.5L 4-cylinder hybrid",
+            "displacementCc": 2487,
+            "powerHp": 225,
+            "torqueNm": 221,
+            "zeroToHundredS": 7.4,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 21.7
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "dualZone",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "toyota-camry-xse-awd",
+          "name": "XSE AWD",
+          "price": 35500,
+          "fuelType": "HYBRID",
+          "transmission": "CVT",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.5L 4-cylinder hybrid",
+            "displacementCc": 2487,
+            "powerHp": 232,
+            "torqueNm": 221,
+            "zeroToHundredS": 7,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 18.7
+          },
+          "spec": {
+            "curbWeightKg": 1690
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "headUpDisplay",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "honda-accord",
+      "make": "honda",
+      "name": "Accord",
+      "bodyType": "SEDAN",
+      "modelYear": 2025,
+      "segment": "Midsize sedan",
+      "isPopular": true,
+      "summary": "Spacious, polished and quick in hybrid form; one of the best family sedans available.",
+      "image": {
+        "url": "/images/cars/honda-accord.jpg",
+        "author": "MercurySable99",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Honda_Accord_LX,_front_left,_07-13-2023.jpg"
+      },
+      "review": {
+        "rating": 8.5,
+        "verdict": "Big inside, polished on the road and brisk as a hybrid; a class leader.",
+        "pros": [
+          "Huge rear seat and trunk",
+          "Refined hybrid acceleration",
+          "Upscale, well-built cabin"
+        ],
+        "cons": [
+          "No AWD option",
+          "Base trims miss key features",
+          "Touchscreen size varies by trim"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4970,
+          "widthMm": 1862,
+          "heightMm": 1450,
+          "wheelbaseMm": 2830,
+          "groundClearanceMm": 135,
+          "cargoL": 473,
+          "fuelTankL": 56,
+          "curbWeightKg": 1490
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 5,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 10,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 140,
+          "annualInsurance": 2100,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 57
+        }
+      },
+      "variants": [
+        {
+          "slug": "honda-accord-lx",
+          "name": "LX",
+          "price": 28500,
+          "fuelType": "GASOLINE",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "1.5L turbo 4-cylinder",
+            "displacementCc": 1498,
+            "powerHp": 192,
+            "torqueNm": 260,
+            "zeroToHundredS": 7.6,
+            "topSpeedKmh": 200,
+            "efficiencyKmpl": 13.6
+          },
+          "safety": {
+            "blindSpotMonitor": false
+          },
+          "features": [
+            "carplay",
+            "dualZone",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "honda-accord-sport-l-hybrid",
+          "name": "Sport-L Hybrid",
+          "price": 33800,
+          "fuelType": "HYBRID",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder hybrid",
+            "displacementCc": 1993,
+            "powerHp": 204,
+            "torqueNm": 335,
+            "zeroToHundredS": 6.7,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 18.7
+          },
+          "spec": {
+            "fuelTankL": 48,
+            "curbWeightKg": 1560
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tesla-model-3",
+      "make": "tesla",
+      "name": "Model 3",
+      "bodyType": "SEDAN",
+      "modelYear": 2025,
+      "segment": "Electric sedan",
+      "isPopular": true,
+      "summary": "Quick, efficient and loaded with tech, with access to the Supercharger network.",
+      "image": {
+        "url": "/images/cars/tesla-model-3.jpg",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_3_(2023)_Autofr%C3%BChling_Ulm_IMG_9282.jpg"
+      },
+      "review": {
+        "rating": 8.2,
+        "verdict": "Quick, efficient and cheap to run, though the minimalist controls are not for everyone.",
+        "pros": [
+          "Long range and rapid Supercharger access",
+          "Brisk acceleration",
+          "Low running costs"
+        ],
+        "cons": [
+          "No Apple CarPlay or Android Auto",
+          "Nearly all controls on the touchscreen",
+          "Firm ride on rough roads"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4720,
+          "widthMm": 1850,
+          "heightMm": 1441,
+          "wheelbaseMm": 2875,
+          "groundClearanceMm": 138,
+          "cargoL": 682,
+          "fuelTankL": null,
+          "curbWeightKg": 1760
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 5,
+          "sideStars": 5,
+          "rolloverStars": 5,
+          "airbags": 8,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 40000,
+          "serviceCost": 100,
+          "annualInsurance": 2700,
+          "warrantyYears": 4,
+          "warrantyKm": 80000,
+          "resaleValuePct5y": 45
+        }
+      },
+      "variants": [
+        {
+          "slug": "tesla-model-3-rwd",
+          "name": "RWD",
+          "price": 42500,
+          "fuelType": "ELECTRIC",
+          "transmission": "SINGLE_SPEED",
+          "drivetrain": "RWD",
+          "seats": 5,
+          "perf": {
+            "engine": "Single rear motor",
+            "powerHp": 272,
+            "torqueNm": 420,
+            "zeroToHundredS": 5.8,
+            "topSpeedKmh": 201,
+            "rangeKm": 584,
+            "consumptionKwh100km": 14
+          },
+          "spec": {
+            "batteryKwh": 60
+          },
+          "features": [
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "ledHeadlights",
+            "sunroof"
+          ]
+        },
+        {
+          "slug": "tesla-model-3-long-range-awd",
+          "name": "Long Range AWD",
+          "price": 50000,
+          "fuelType": "ELECTRIC",
+          "transmission": "SINGLE_SPEED",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "Dual motor",
+            "powerHp": 394,
+            "torqueNm": 493,
+            "zeroToHundredS": 4.2,
+            "topSpeedKmh": 201,
+            "rangeKm": 557,
+            "consumptionKwh100km": 15.2
+          },
+          "spec": {
+            "batteryKwh": 79,
+            "curbWeightKg": 1830
+          },
+          "features": [
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "toyota-prius",
+      "make": "toyota",
+      "name": "Prius",
+      "bodyType": "HATCHBACK",
+      "modelYear": 2025,
+      "segment": "Hybrid hatchback",
+      "isPopular": false,
+      "summary": "Now genuinely stylish and quick while still sipping fuel.",
+      "image": {
+        "url": "/images/cars/toyota-prius.jpg",
+        "author": "© M 93",
+        "license": "CC BY-SA 3.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Prius_2.0_HEV_Limited_(V)_%E2%80%93_f_18112022.jpg"
+      },
+      "review": {
+        "rating": 8,
+        "verdict": "The Prius finally looks as good as its fuel economy figures.",
+        "pros": [
+          "Outstanding fuel economy",
+          "Striking design",
+          "Surprisingly brisk"
+        ],
+        "cons": [
+          "Limited rear headroom",
+          "Small rear window hurts visibility",
+          "High cargo floor"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4600,
+          "widthMm": 1780,
+          "heightMm": 1430,
+          "wheelbaseMm": 2750,
+          "groundClearanceMm": 145,
+          "cargoL": 674,
+          "fuelTankL": 40,
+          "curbWeightKg": 1420
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": null,
+          "frontalStars": null,
+          "sideStars": null,
+          "rolloverStars": null,
+          "airbags": 8,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 120,
+          "annualInsurance": 2000,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 58
+        }
+      },
+      "variants": [
+        {
+          "slug": "toyota-prius-le",
+          "name": "LE",
+          "price": 28500,
+          "fuelType": "HYBRID",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder hybrid",
+            "displacementCc": 1987,
+            "powerHp": 194,
+            "torqueNm": 188,
+            "zeroToHundredS": 7.2,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 24.2
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "toyota-prius-limited-awd",
+          "name": "Limited AWD",
+          "price": 37000,
+          "fuelType": "HYBRID",
+          "transmission": "CVT",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder hybrid",
+            "displacementCc": 1987,
+            "powerHp": 196,
+            "torqueNm": 188,
+            "zeroToHundredS": 7,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 20.8
+          },
+          "spec": {
+            "curbWeightKg": 1540
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "volkswagen-golf-gti",
+      "make": "volkswagen",
+      "name": "Golf GTI",
+      "bodyType": "HATCHBACK",
+      "modelYear": 2025,
+      "segment": "Hot hatch",
+      "isPopular": false,
+      "summary": "The all-rounder hot hatch: fast, practical and fun every day.",
+      "image": {
+        "url": "/images/cars/volkswagen-golf-gti.jpg",
+        "author": "Charles from Port Chester, New York",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Golf_VIII_GTI_(2024)_(53623029972).jpg"
+      },
+      "review": {
+        "rating": 8.1,
+        "verdict": "Still the hot hatch that does everything well, if you can live with the touch controls.",
+        "pros": [
+          "Punchy turbo engine",
+          "Sharp, playful handling",
+          "Practical hatchback body"
+        ],
+        "cons": [
+          "Frustrating touch controls",
+          "Manual gearbox no longer offered",
+          "Pricey in top trim"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4290,
+          "widthMm": 1790,
+          "heightMm": 1456,
+          "wheelbaseMm": 2627,
+          "groundClearanceMm": 130,
+          "cargoL": 563,
+          "fuelTankL": 50,
+          "curbWeightKg": 1450
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": null,
+          "frontalStars": null,
+          "sideStars": null,
+          "rolloverStars": null,
+          "airbags": 7,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 170,
+          "annualInsurance": 2400,
+          "warrantyYears": 4,
+          "warrantyKm": 80000,
+          "resaleValuePct5y": 45
+        }
+      },
+      "variants": [
+        {
+          "slug": "volkswagen-golf-gti-s",
+          "name": "S",
+          "price": 33500,
+          "fuelType": "GASOLINE",
+          "transmission": "DCT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L turbo 4-cylinder",
+            "displacementCc": 1984,
+            "powerHp": 241,
+            "torqueNm": 370,
+            "zeroToHundredS": 5.9,
+            "topSpeedKmh": 250,
+            "efficiencyKmpl": 11.5
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "heatedSeats",
+            "dualZone",
+            "keyless",
+            "wirelessCharging",
+            "ledHeadlights",
+            "wheels18"
+          ]
+        },
+        {
+          "slug": "volkswagen-golf-gti-autobahn",
+          "name": "Autobahn",
+          "price": 40000,
+          "fuelType": "GASOLINE",
+          "transmission": "DCT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L turbo 4-cylinder",
+            "displacementCc": 1984,
+            "powerHp": 241,
+            "torqueNm": 370,
+            "zeroToHundredS": 5.8,
+            "topSpeedKmh": 250,
+            "efficiencyKmpl": 11.5
+          },
+          "spec": {
+            "curbWeightKg": 1475
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "headUpDisplay",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "toyota-rav4",
+      "make": "toyota",
+      "name": "RAV4",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Compact SUV",
+      "isPopular": true,
+      "summary": "America's favorite SUV: practical, efficient and built to last.",
+      "image": {
+        "url": "/images/cars/toyota-rav4.jpg",
+        "author": "Mr.choppers",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Toyota_RAV4_Prime_XSE_Premium_in_Silver_Sky_with_Midnight_Black_roof,_front_left.jpg"
+      },
+      "review": {
+        "rating": 8,
+        "verdict": "Practical, frugal in hybrid form and famously durable; an easy recommendation.",
+        "pros": [
+          "Hybrid returns excellent mpg",
+          "Roomy cargo area",
+          "Class-leading resale value"
+        ],
+        "cons": [
+          "Coarse engine note",
+          "Dated infotainment on base trims",
+          "Ride can feel stiff"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4600,
+          "widthMm": 1855,
+          "heightMm": 1700,
+          "wheelbaseMm": 2690,
+          "groundClearanceMm": 216,
+          "cargoL": 1060,
+          "fuelTankL": 55,
+          "curbWeightKg": 1600
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 8,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 130,
+          "annualInsurance": 2000,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 62
+        }
+      },
+      "variants": [
+        {
+          "slug": "toyota-rav4-le",
+          "name": "LE",
+          "price": 29800,
+          "fuelType": "GASOLINE",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.5L 4-cylinder",
+            "displacementCc": 2487,
+            "powerHp": 203,
+            "torqueNm": 249,
+            "zeroToHundredS": 8.4,
+            "topSpeedKmh": 190,
+            "efficiencyKmpl": 12.8
+          },
+          "features": [
+            "carplay",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "toyota-rav4-hybrid-xle",
+          "name": "Hybrid XLE",
+          "price": 35000,
+          "fuelType": "HYBRID",
+          "transmission": "CVT",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.5L 4-cylinder hybrid",
+            "displacementCc": 2487,
+            "powerHp": 219,
+            "torqueNm": 221,
+            "zeroToHundredS": 7.6,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 16.6
+          },
+          "spec": {
+            "curbWeightKg": 1720
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "keyless",
+            "wirelessCharging",
+            "ledHeadlights",
+            "sunroof",
+            "roofRails"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "honda-cr-v",
+      "make": "honda",
+      "name": "CR-V",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Compact SUV",
+      "isPopular": true,
+      "summary": "Roomy, comfortable and refined; it nails the family SUV brief.",
+      "image": {
+        "url": "/images/cars/honda-cr-v.jpg",
+        "author": "© M 93",
+        "license": "CC BY-SA 3.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_CR-V_e-HEV_Elegance_AWD_(VI)_%E2%80%93_f_14072024.jpg"
+      },
+      "review": {
+        "rating": 8.4,
+        "verdict": "The most rounded compact SUV for families, especially as a hybrid.",
+        "pros": [
+          "Cavernous rear seat and cargo hold",
+          "Smooth hybrid powertrain",
+          "Comfortable, quiet ride"
+        ],
+        "cons": [
+          "Not especially quick",
+          "Hybrid only on pricier trims",
+          "Small screen on lower trims"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4706,
+          "widthMm": 1866,
+          "heightMm": 1681,
+          "wheelbaseMm": 2700,
+          "groundClearanceMm": 198,
+          "cargoL": 1113,
+          "fuelTankL": 53,
+          "curbWeightKg": 1580
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 5,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 8,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 140,
+          "annualInsurance": 1950,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 60
+        }
+      },
+      "variants": [
+        {
+          "slug": "honda-cr-v-ex",
+          "name": "EX",
+          "price": 33000,
+          "fuelType": "GASOLINE",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "1.5L turbo 4-cylinder",
+            "displacementCc": 1498,
+            "powerHp": 190,
+            "torqueNm": 243,
+            "zeroToHundredS": 8.2,
+            "topSpeedKmh": 190,
+            "efficiencyKmpl": 12.8
+          },
+          "features": [
+            "carplay",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "honda-cr-v-sport-l-hybrid",
+          "name": "Sport-L Hybrid AWD",
+          "price": 40000,
+          "fuelType": "HYBRID",
+          "transmission": "CVT",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.0L 4-cylinder hybrid",
+            "displacementCc": 1993,
+            "powerHp": 204,
+            "torqueNm": 335,
+            "zeroToHundredS": 7.6,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 15.9
+          },
+          "spec": {
+            "curbWeightKg": 1720
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18",
+            "roofRails"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mazda-cx-5",
+      "make": "mazda",
+      "name": "CX-5",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Compact SUV",
+      "isPopular": false,
+      "summary": "The driver's choice among compact SUVs, with a near-premium cabin.",
+      "image": {
+        "url": "/images/cars/mazda-cx-5.jpg",
+        "author": "Mr.choppers",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Mazda_CX-5_2.5_S_Select_in_Platinum_Quartz_Metallic,_front_right.jpg"
+      },
+      "review": {
+        "rating": 8.2,
+        "verdict": "Feels a class above in its cabin and on a winding road, at the cost of some space.",
+        "pros": [
+          "Upscale interior",
+          "Engaging steering and handling",
+          "Strong turbo engine"
+        ],
+        "cons": [
+          "Tight cargo space for the class",
+          "Fuel economy trails rivals",
+          "No hybrid option"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4575,
+          "widthMm": 1845,
+          "heightMm": 1680,
+          "wheelbaseMm": 2700,
+          "groundClearanceMm": 193,
+          "cargoL": 875,
+          "fuelTankL": 56,
+          "curbWeightKg": 1650
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 6,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 12000,
+          "serviceCost": 150,
+          "annualInsurance": 2000,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 52
+        }
+      },
+      "variants": [
+        {
+          "slug": "mazda-cx-5-s-select",
+          "name": "2.5 S Select",
+          "price": 30000,
+          "fuelType": "GASOLINE",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.5L 4-cylinder",
+            "displacementCc": 2488,
+            "powerHp": 187,
+            "torqueNm": 252,
+            "zeroToHundredS": 8.6,
+            "topSpeedKmh": 195,
+            "efficiencyKmpl": 11.1
+          },
+          "features": [
+            "carplay",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "ledHeadlights",
+            "roofRails"
+          ]
+        },
+        {
+          "slug": "mazda-cx-5-turbo-premium-plus",
+          "name": "2.5 Turbo Premium Plus",
+          "price": 41000,
+          "fuelType": "GASOLINE",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.5L turbo 4-cylinder",
+            "displacementCc": 2488,
+            "powerHp": 256,
+            "torqueNm": 434,
+            "zeroToHundredS": 6.3,
+            "topSpeedKmh": 210,
+            "efficiencyKmpl": 10.2
+          },
+          "spec": {
+            "curbWeightKg": 1720
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "headUpDisplay",
+            "surroundCamera",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof",
+            "roofRails"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hyundai-tucson",
+      "make": "hyundai",
+      "name": "Tucson",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Compact SUV",
+      "isPopular": false,
+      "summary": "Feature-packed and practical, with a standout hybrid and a long warranty.",
+      "image": {
+        "url": "/images/cars/hyundai-tucson.jpg",
+        "author": "© M 93",
+        "license": "CC BY-SA 3.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_Tucson_1.6_T-GDI_PHEV_Prime_(IV)_%E2%80%93_f_05072025.jpg"
+      },
+      "review": {
+        "rating": 8.1,
+        "verdict": "Lots of space, kit and warranty for the money; pick the hybrid.",
+        "pros": [
+          "Generous standard equipment",
+          "Excellent warranty",
+          "Spacious back seat"
+        ],
+        "cons": [
+          "Base engine is sluggish",
+          "Touch-sensitive controls",
+          "Below-average resale value"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4640,
+          "widthMm": 1865,
+          "heightMm": 1665,
+          "wheelbaseMm": 2755,
+          "groundClearanceMm": 160,
+          "cargoL": 1095,
+          "fuelTankL": 54,
+          "curbWeightKg": 1600
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 7,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 12000,
+          "serviceCost": 120,
+          "annualInsurance": 1900,
+          "warrantyYears": 5,
+          "warrantyKm": 96500,
+          "resaleValuePct5y": 47
+        }
+      },
+      "variants": [
+        {
+          "slug": "hyundai-tucson-sel",
+          "name": "SEL",
+          "price": 31500,
+          "fuelType": "GASOLINE",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "2.5L 4-cylinder",
+            "displacementCc": 2497,
+            "powerHp": 187,
+            "torqueNm": 241,
+            "zeroToHundredS": 9,
+            "topSpeedKmh": 190,
+            "efficiencyKmpl": 11.5
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "keyless",
+            "remoteStart",
+            "ledHeadlights",
+            "roofRails"
+          ]
+        },
+        {
+          "slug": "hyundai-tucson-hybrid-limited",
+          "name": "Hybrid Limited",
+          "price": 41500,
+          "fuelType": "HYBRID",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "1.6L turbo 4-cylinder hybrid",
+            "displacementCc": 1598,
+            "powerHp": 231,
+            "torqueNm": 350,
+            "zeroToHundredS": 7,
+            "topSpeedKmh": 190,
+            "efficiencyKmpl": 15.7
+          },
+          "spec": {
+            "curbWeightKg": 1750
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "surroundCamera",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof",
+            "roofRails"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "nissan-rogue",
+      "make": "nissan",
+      "name": "Rogue",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Compact SUV",
+      "isPopular": false,
+      "summary": "Comfortable and well-equipped, if not the most exciting compact SUV.",
+      "image": {
+        "url": "/images/cars/nissan-rogue.jpg",
+        "author": "Elise240SX",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Nissan_Rogue_SV_Moonroof_in_Gun_Metallic,_front_right,_2026-06-14.jpg"
+      },
+      "review": {
+        "rating": 7.6,
+        "verdict": "A comfortable, well-equipped commuter that trails rivals on refinement and resale.",
+        "pros": [
+          "Very comfortable front seats",
+          "Upscale top trims",
+          "Good economy for a non-hybrid"
+        ],
+        "cons": [
+          "Three-cylinder engine can sound gruff",
+          "CVT dulls responses",
+          "Weak resale value"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4648,
+          "widthMm": 1840,
+          "heightMm": 1700,
+          "wheelbaseMm": 2705,
+          "groundClearanceMm": 208,
+          "cargoL": 1050,
+          "fuelTankL": 55,
+          "curbWeightKg": 1590
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 10,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 12000,
+          "serviceCost": 110,
+          "annualInsurance": 2000,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 42
+        }
+      },
+      "variants": [
+        {
+          "slug": "nissan-rogue-s",
+          "name": "S",
+          "price": 29500,
+          "fuelType": "GASOLINE",
+          "transmission": "CVT",
+          "drivetrain": "FWD",
+          "seats": 5,
+          "perf": {
+            "engine": "1.5L turbo 3-cylinder",
+            "displacementCc": 1477,
+            "powerHp": 201,
+            "torqueNm": 305,
+            "zeroToHundredS": 8,
+            "topSpeedKmh": 190,
+            "efficiencyKmpl": 13.6
+          },
+          "safety": {
+            "adaptiveCruise": false
+          },
+          "features": [
+            "carplay",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "nissan-rogue-sl-awd",
+          "name": "SL AWD",
+          "price": 39500,
+          "fuelType": "GASOLINE",
+          "transmission": "CVT",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "1.5L turbo 3-cylinder",
+            "displacementCc": 1477,
+            "powerHp": 201,
+            "torqueNm": 305,
+            "zeroToHundredS": 7.9,
+            "topSpeedKmh": 190,
+            "efficiencyKmpl": 12.8
+          },
+          "spec": {
+            "curbWeightKg": 1660
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "surroundCamera",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof",
+            "roofRails"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tesla-model-y",
+      "make": "tesla",
+      "name": "Model Y",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Electric SUV",
+      "isPopular": true,
+      "summary": "A practical, fast electric family SUV backed by a vast charging network.",
+      "image": {
+        "url": "/images/cars/tesla-model-y.jpg",
+        "author": "© M 93",
+        "license": "CC BY-SA 3.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_Premium_(Facelift)_%E2%80%93_f_05052026.jpg"
+      },
+      "review": {
+        "rating": 8,
+        "verdict": "Practical, quick and easy to charge on the road; the default electric family SUV.",
+        "pros": [
+          "Excellent range and charging network",
+          "Huge cargo space with front trunk",
+          "Quick acceleration"
+        ],
+        "cons": [
+          "No Apple CarPlay or Android Auto",
+          "Firm ride",
+          "Minimal physical controls"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4797,
+          "widthMm": 1921,
+          "heightMm": 1624,
+          "wheelbaseMm": 2890,
+          "groundClearanceMm": 167,
+          "cargoL": 971,
+          "fuelTankL": null,
+          "batteryKwh": 75,
+          "curbWeightKg": 1900
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 5,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 8,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 40000,
+          "serviceCost": 100,
+          "annualInsurance": 2600,
+          "warrantyYears": 4,
+          "warrantyKm": 80000,
+          "resaleValuePct5y": 45
+        }
+      },
+      "variants": [
+        {
+          "slug": "tesla-model-y-long-range-rwd",
+          "name": "Long Range RWD",
+          "price": 45000,
+          "fuelType": "ELECTRIC",
+          "transmission": "SINGLE_SPEED",
+          "drivetrain": "RWD",
+          "seats": 5,
+          "perf": {
+            "engine": "Single rear motor",
+            "powerHp": 299,
+            "torqueNm": 450,
+            "zeroToHundredS": 5.4,
+            "topSpeedKmh": 201,
+            "rangeKm": 571,
+            "consumptionKwh100km": 15.5
+          },
+          "features": [
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        },
+        {
+          "slug": "tesla-model-y-long-range-awd",
+          "name": "Long Range AWD",
+          "price": 49000,
+          "fuelType": "ELECTRIC",
+          "transmission": "SINGLE_SPEED",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "Dual motor",
+            "powerHp": 384,
+            "torqueNm": 493,
+            "zeroToHundredS": 4.6,
+            "topSpeedKmh": 201,
+            "rangeKm": 526,
+            "consumptionKwh100km": 16.2
+          },
+          "spec": {
+            "curbWeightKg": 1980
+          },
+          "features": [
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hyundai-ioniq-5",
+      "make": "hyundai",
+      "name": "Ioniq 5",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Electric SUV",
+      "isPopular": true,
+      "summary": "Retro-futuristic style, ultra-fast charging and a roomy, lounge-like cabin.",
+      "image": {
+        "url": "/images/cars/hyundai-ioniq-5.jpg",
+        "author": "© M 93",
+        "license": "CC BY-SA 3.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5_AWD_Techniq-Paket_%E2%80%93_f_31122024.jpg"
+      },
+      "review": {
+        "rating": 8.6,
+        "verdict": "Distinctive, spacious and among the fastest-charging EVs at its price.",
+        "pros": [
+          "Very fast DC charging",
+          "Spacious, flexible interior",
+          "Comfortable and quiet"
+        ],
+        "cons": [
+          "AWD range drops noticeably",
+          "Rear visibility is limited",
+          "Steep price for top trims"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4655,
+          "widthMm": 1890,
+          "heightMm": 1605,
+          "wheelbaseMm": 3000,
+          "groundClearanceMm": 160,
+          "cargoL": 770,
+          "fuelTankL": null,
+          "batteryKwh": 84,
+          "curbWeightKg": 2000
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 8,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 24000,
+          "serviceCost": 90,
+          "annualInsurance": 2300,
+          "warrantyYears": 5,
+          "warrantyKm": 96500,
+          "resaleValuePct5y": 38
+        }
+      },
+      "variants": [
+        {
+          "slug": "hyundai-ioniq-5-se-rwd",
+          "name": "SE RWD",
+          "price": 44000,
+          "fuelType": "ELECTRIC",
+          "transmission": "SINGLE_SPEED",
+          "drivetrain": "RWD",
+          "seats": 5,
+          "perf": {
+            "engine": "Single rear motor",
+            "powerHp": 225,
+            "torqueNm": 350,
+            "zeroToHundredS": 7,
+            "topSpeedKmh": 185,
+            "rangeKm": 512,
+            "consumptionKwh100km": 16.9
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "heatedSeats",
+            "dualZone",
+            "powerSeat",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18"
+          ]
+        },
+        {
+          "slug": "hyundai-ioniq-5-limited-awd",
+          "name": "Limited AWD",
+          "price": 55000,
+          "fuelType": "ELECTRIC",
+          "transmission": "SINGLE_SPEED",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "Dual motor",
+            "powerHp": 320,
+            "torqueNm": 605,
+            "zeroToHundredS": 4.9,
+            "topSpeedKmh": 185,
+            "rangeKm": 418,
+            "consumptionKwh100km": 20.5
+          },
+          "spec": {
+            "curbWeightKg": 2160
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "headUpDisplay",
+            "surroundCamera",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ford-mustang-mach-e",
+      "make": "ford",
+      "name": "Mustang Mach-E",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Electric SUV",
+      "isPopular": false,
+      "summary": "A genuinely fun-to-drive electric SUV with a tech-forward cabin.",
+      "image": {
+        "url": "/images/cars/ford-mustang-mach-e.jpg",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Ford_Mustang_Mach-E_Standard_Range_Front.jpg"
+      },
+      "review": {
+        "rating": 7.8,
+        "verdict": "One of the more engaging EVs to drive, held back by range and depreciation.",
+        "pros": [
+          "Engaging handling",
+          "Quick in AWD form",
+          "Hands-free highway driving available"
+        ],
+        "cons": [
+          "Range trails rivals",
+          "Ride can be harsh",
+          "Heavy depreciation"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 4743,
+          "widthMm": 1881,
+          "heightMm": 1613,
+          "wheelbaseMm": 2984,
+          "groundClearanceMm": 145,
+          "cargoL": 974,
+          "fuelTankL": null,
+          "batteryKwh": 72,
+          "curbWeightKg": 2000
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 5,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 7,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 90,
+          "annualInsurance": 2500,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 38
+        }
+      },
+      "variants": [
+        {
+          "slug": "ford-mustang-mach-e-select-rwd",
+          "name": "Select RWD",
+          "price": 37000,
+          "fuelType": "ELECTRIC",
+          "transmission": "SINGLE_SPEED",
+          "drivetrain": "RWD",
+          "seats": 5,
+          "perf": {
+            "engine": "Single rear motor",
+            "powerHp": 264,
+            "torqueNm": 430,
+            "zeroToHundredS": 5.8,
+            "topSpeedKmh": 180,
+            "rangeKm": 418,
+            "consumptionKwh100km": 18
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "dualZone",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18"
+          ]
+        },
+        {
+          "slug": "ford-mustang-mach-e-premium-awd",
+          "name": "Premium AWD Extended Range",
+          "price": 48000,
+          "fuelType": "ELECTRIC",
+          "transmission": "SINGLE_SPEED",
+          "drivetrain": "AWD",
+          "seats": 5,
+          "perf": {
+            "engine": "Dual motor",
+            "powerHp": 400,
+            "torqueNm": 860,
+            "zeroToHundredS": 4.8,
+            "topSpeedKmh": 180,
+            "rangeKm": 483,
+            "consumptionKwh100km": 19.5
+          },
+          "spec": {
+            "batteryKwh": 91,
+            "curbWeightKg": 2200
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "kia-telluride",
+      "make": "kia",
+      "name": "Telluride",
+      "bodyType": "SUV",
+      "modelYear": 2025,
+      "segment": "Three-row SUV",
+      "isPopular": true,
+      "summary": "A stylish, near-luxury three-row SUV and one of the best family haulers.",
+      "image": {
+        "url": "/images/cars/kia-telluride.jpg",
+        "author": "Kevauto",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Kia_Telluride_EX_(facelift),_front_4.16.23.jpg"
+      },
+      "review": {
+        "rating": 8.7,
+        "verdict": "Roomy, upscale and well priced; the three-row SUV to beat.",
+        "pros": [
+          "Roomy for adults in all three rows",
+          "Upscale cabin and features",
+          "Strong value"
+        ],
+        "cons": [
+          "Thirsty V6",
+          "No hybrid option",
+          "Large footprint in tight parking"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 5000,
+          "widthMm": 1990,
+          "heightMm": 1750,
+          "wheelbaseMm": 2900,
+          "groundClearanceMm": 203,
+          "cargoL": 595,
+          "fuelTankL": 71,
+          "curbWeightKg": 1950
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 5,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 4,
+          "airbags": 7,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 12000,
+          "serviceCost": 140,
+          "annualInsurance": 2300,
+          "warrantyYears": 5,
+          "warrantyKm": 96500,
+          "resaleValuePct5y": 52
+        }
+      },
+      "variants": [
+        {
+          "slug": "kia-telluride-lx",
+          "name": "LX",
+          "price": 37000,
+          "fuelType": "GASOLINE",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "FWD",
+          "seats": 8,
+          "perf": {
+            "engine": "3.8L V6",
+            "displacementCc": 3778,
+            "powerHp": 291,
+            "torqueNm": 355,
+            "zeroToHundredS": 7.1,
+            "topSpeedKmh": 200,
+            "efficiencyKmpl": 9.4
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "dualZone",
+            "keyless",
+            "ledHeadlights",
+            "wheels18",
+            "roofRails"
+          ]
+        },
+        {
+          "slug": "kia-telluride-sx-awd",
+          "name": "SX AWD",
+          "price": 48500,
+          "fuelType": "GASOLINE",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "AWD",
+          "seats": 7,
+          "perf": {
+            "engine": "3.8L V6",
+            "displacementCc": 3778,
+            "powerHp": 291,
+            "torqueNm": 355,
+            "zeroToHundredS": 7.3,
+            "topSpeedKmh": 200,
+            "efficiencyKmpl": 8.9
+          },
+          "spec": {
+            "curbWeightKg": 2050
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "powerLiftgate",
+            "remoteStart",
+            "surroundCamera",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof",
+            "roofRails"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ford-f-150",
+      "make": "ford",
+      "name": "F-150",
+      "bodyType": "PICKUP",
+      "modelYear": 2025,
+      "segment": "Full-size pickup",
+      "isPopular": true,
+      "summary": "The best-selling truck, with capability, comfort and an engine for every need.",
+      "image": {
+        "url": "/images/cars/ford-f-150.jpg",
+        "author": "Deathpallie325",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Ford_F-150_Lariat_front_view.jpg"
+      },
+      "review": {
+        "rating": 8.3,
+        "verdict": "Capable, comfortable and endlessly configurable; still the full-size benchmark.",
+        "pros": [
+          "Wide range of powertrains",
+          "Comfortable, high-tech cabin",
+          "Impressive towing capability"
+        ],
+        "cons": [
+          "Prices climb steeply",
+          "Large size is hard to park",
+          "Thirsty V8"
+        ]
+      },
+      "defaults": {
+        "spec": {
+          "lengthMm": 5885,
+          "widthMm": 2030,
+          "heightMm": 1960,
+          "wheelbaseMm": 3680,
+          "groundClearanceMm": 239,
+          "cargoL": 1495,
+          "fuelTankL": 87,
+          "curbWeightKg": 2040
+        },
+        "safety": {
+          "agency": "NHTSA",
+          "overallStars": 4,
+          "frontalStars": 4,
+          "sideStars": 5,
+          "rolloverStars": 3,
+          "airbags": 8,
+          "automaticEmergencyBrake": true,
+          "laneKeepAssist": true,
+          "blindSpotMonitor": true,
+          "adaptiveCruise": true
+        },
+        "cost": {
+          "serviceIntervalKm": 16000,
+          "serviceCost": 180,
+          "annualInsurance": 2300,
+          "warrantyYears": 3,
+          "warrantyKm": 58000,
+          "resaleValuePct5y": 58
+        }
+      },
+      "variants": [
+        {
+          "slug": "ford-f-150-xl",
+          "name": "XL 2.7 EcoBoost",
+          "price": 40000,
+          "fuelType": "GASOLINE",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "RWD",
+          "seats": 6,
+          "perf": {
+            "engine": "2.7L twin-turbo V6",
+            "displacementCc": 2694,
+            "powerHp": 325,
+            "torqueNm": 542,
+            "zeroToHundredS": 6.3,
+            "topSpeedKmh": 170,
+            "efficiencyKmpl": 8.5
+          },
+          "safety": {
+            "blindSpotMonitor": false,
+            "adaptiveCruise": false
+          },
+          "features": [
+            "carplay",
+            "keyless",
+            "ledHeadlights"
+          ]
+        },
+        {
+          "slug": "ford-f-150-lariat",
+          "name": "Lariat 5.0 V8 4x4",
+          "price": 62000,
+          "fuelType": "GASOLINE",
+          "transmission": "AUTOMATIC",
+          "drivetrain": "4WD",
+          "seats": 5,
+          "perf": {
+            "engine": "5.0L V8",
+            "displacementCc": 4951,
+            "powerHp": 400,
+            "torqueNm": 556,
+            "zeroToHundredS": 5.8,
+            "topSpeedKmh": 180,
+            "efficiencyKmpl": 7.6
+          },
+          "spec": {
+            "curbWeightKg": 2300
+          },
+          "features": [
+            "carplay",
+            "wirelessMirroring",
+            "largeScreen",
+            "premiumAudio",
+            "navigation",
+            "heatedSeats",
+            "ventilatedSeats",
+            "heatedWheel",
+            "dualZone",
+            "powerSeat",
+            "leather",
+            "keyless",
+            "wirelessCharging",
+            "remoteStart",
+            "surroundCamera",
+            "ledHeadlights",
+            "wheels18",
+            "sunroof"
+          ]
+        }
+      ]
+    }
+  ]
+}

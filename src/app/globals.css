@@ -1,0 +1,219 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design tokens. Visual direction: airy, neutral, near-black primary with a sky-blue
+ * brand accent, generous whitespace and "squircle"-scaled radii. Light values follow
+ * the reference palette; dark values are derived to keep the same contrast relationships.
+ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-geist-sans);
+  --color-brand: var(--brand);
+  --color-brand-content: var(--brand-content);
+  --color-surface-primary: var(--surface-primary);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-tertiary: var(--surface-tertiary);
+  --color-border-surface: var(--border-surface);
+  --color-border-surface-strong: var(--border-surface-strong);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  --squircle-factor: 1.4;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(0.375rem * var(--squircle-factor));
+  --radius-lg: calc(0.5rem * var(--squircle-factor));
+  --radius-xl: calc(0.75rem * var(--squircle-factor));
+  --radius-2xl: calc(1rem * var(--squircle-factor));
+  --radius-3xl: calc(1.5rem * var(--squircle-factor));
+  --radius-4xl: calc(2rem * var(--squircle-factor));
+
+  /* Marquee (3D review wall) */
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+}
+
+:root {
+  --radius: 0.625rem;
+
+  --background: lab(100% 0 0);
+  --foreground: lab(2.93655% -0.435196 -0.608262); /* mist-950 */
+  --card: lab(100% 0 0);
+  --card-foreground: lab(2.75381% 0 0);
+  --popover: lab(100% 0 0);
+  --popover-foreground: lab(2.75381% 0 0);
+  --primary: lab(2.93655% -0.435196 -0.608262);
+  --primary-foreground: lab(98.26% 0 0);
+  --secondary: lab(96.52% 0 0);
+  --secondary-foreground: lab(7.78201% 0 0);
+  --muted: lab(96.52% 0 0);
+  --muted-foreground: lab(48.496% 0 0); /* neutral-500 */
+  --accent: lab(96.52% 0 0);
+  --accent-foreground: lab(7.78201% 0 0);
+  --destructive: lab(48.4493% 77.4328 61.5452);
+  --border: lab(90.952% 0 0);
+  --input: lab(90.952% 0 0);
+  --ring: lab(66.128% 0 0);
+
+  --brand: lab(63.3038% -18.433 -51.0407); /* sky-500 */
+  --brand-content: lab(51.7754% -11.4712 -49.8349); /* sky-600 */
+
+  --surface-primary: lab(100% 0 0);
+  --surface-secondary: lab(100% 0 0 / 0.85);
+  --surface-tertiary: lab(100% 0 0 / 0.55);
+  --border-surface: lab(2.75381% 0 0 / 0.1);
+  --border-surface-strong: lab(2.75381% 0 0 / 0.15);
+
+  /* Charts: brand first, then distinguishable neutrals/cools. */
+  --chart-1: lab(63.3038% -18.433 -51.0407);
+  --chart-2: lab(27.036% 0 0);
+  --chart-3: lab(84.92% 0 0);
+  --chart-4: lab(86.15% -4.04379 -21.0797);
+  --chart-5: lab(48.496% 0 0);
+
+  --sidebar: lab(98.26% 0 0);
+  --sidebar-foreground: lab(2.75381% 0 0);
+  --sidebar-primary: lab(7.78201% 0 0);
+  --sidebar-primary-foreground: lab(98.26% 0 0);
+  --sidebar-accent: lab(96.52% 0 0);
+  --sidebar-accent-foreground: lab(7.78201% 0 0);
+  --sidebar-border: lab(90.952% 0 0);
+  --sidebar-ring: lab(66.128% 0 0);
+
+  /* Hero sky */
+  --sky-top: lab(72% -14 -44);
+  --sky-bottom: lab(90% -6 -14);
+  --cloud: lab(100% 0 0 / 0.95);
+}
+
+.dark {
+  --background: lab(2.93655% -0.435196 -0.608262);
+  --foreground: lab(96.52% 0 0);
+  --card: lab(7.5% -0.4 -1.2);
+  --card-foreground: lab(96.52% 0 0);
+  --popover: lab(7.5% -0.4 -1.2);
+  --popover-foreground: lab(96.52% 0 0);
+  --primary: lab(96.52% 0 0);
+  --primary-foreground: lab(7.78201% 0 0);
+  --secondary: lab(15.204% 0 0);
+  --secondary-foreground: lab(96.52% 0 0);
+  --muted: lab(15.204% 0 0);
+  --muted-foreground: lab(66.128% 0 0);
+  --accent: lab(15.204% 0 0);
+  --accent-foreground: lab(96.52% 0 0);
+  --destructive: lab(63.7053% 60.745 31.3109);
+  --border: lab(100% 0 0 / 0.1);
+  --input: lab(100% 0 0 / 0.15);
+  --ring: lab(48.496% 0 0);
+
+  --brand: lab(70.687% -23.6078 -45.9483); /* sky-400 */
+  --brand-content: lab(70.687% -23.6078 -45.9483);
+
+  --surface-primary: lab(7.5% -0.4 -1.2);
+  --surface-secondary: lab(7.5% -0.4 -1.2 / 0.85);
+  --surface-tertiary: lab(7.5% -0.4 -1.2 / 0.55);
+  --border-surface: lab(100% 0 0 / 0.1);
+  --border-surface-strong: lab(100% 0 0 / 0.16);
+
+  --chart-1: lab(70.687% -23.6078 -45.9483);
+  --chart-2: lab(84.92% 0 0);
+  --chart-3: lab(34.924% 0 0);
+  --chart-4: lab(41.6013% -9.10804 -42.5647);
+  --chart-5: lab(66.128% 0 0);
+
+  --sidebar: lab(7.5% -0.4 -1.2);
+  --sidebar-foreground: lab(96.52% 0 0);
+  --sidebar-primary: lab(70.687% -23.6078 -45.9483);
+  --sidebar-primary-foreground: lab(98.26% 0 0);
+  --sidebar-accent: lab(15.204% 0 0);
+  --sidebar-accent-foreground: lab(96.52% 0 0);
+  --sidebar-border: lab(100% 0 0 / 0.1);
+  --sidebar-ring: lab(48.496% 0 0);
+
+  --sky-top: lab(17.8299% -5.31271 -21.1584);
+  --sky-bottom: lab(4% -0.5 -2);
+  --cloud: lab(100% 0 0 / 0.07);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    overflow-x: clip;
+  }
+}
+
+/* Soft sky with CSS-only "clouds" for the hero. */
+@utility bg-sky {
+  background:
+    radial-gradient(18% 12% at 12% 22%, var(--cloud), transparent 70%),
+    radial-gradient(26% 14% at 22% 30%, var(--cloud), transparent 72%),
+    radial-gradient(22% 13% at 84% 14%, var(--cloud), transparent 70%),
+    radial-gradient(30% 16% at 74% 24%, var(--cloud), transparent 72%),
+    radial-gradient(34% 18% at 50% 62%, var(--cloud), transparent 70%),
+    radial-gradient(40% 22% at 8% 82%, var(--cloud), transparent 70%),
+    radial-gradient(36% 20% at 94% 78%, var(--cloud), transparent 70%),
+    linear-gradient(180deg, var(--sky-top), var(--sky-bottom) 85%);
+}
+
+/* Thin vertical rules framing centred content, as in the reference layout. */
+@utility frame {
+  @apply mx-auto w-full max-w-5xl border-x border-border/70;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}

@@ -1,0 +1,10 @@
+allowBuilds:
+  sharp: false
+  unrs-resolver: false
+  '@prisma/engines': true
+  prisma: true
+  esbuild: true
+
+# Flat node_modules (no symlinks): Windows blocks symlink creation without Developer Mode,
+# which breaks Netlify's Next.js adapter when building locally.
+nodeLinker: hoisted

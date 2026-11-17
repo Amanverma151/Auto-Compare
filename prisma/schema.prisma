@@ -1,0 +1,173 @@
+// Auto Compare data model. Source of truth for the database (see CLAUDE.md §2.3).
+// Units: money = whole USD, power = hp, torque = Nm, lengths = mm, volumes = L,
+// efficiency = km/l (combustion & hybrid), range = km, consumption = kWh/100km (EV).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum BodyType {
+  HATCHBACK
+  SEDAN
+  SUV
+  PICKUP
+}
+
+enum FuelType {
+  GASOLINE
+  DIESEL
+  HYBRID
+  PLUGIN_HYBRID
+  ELECTRIC
+}
+
+enum Transmission {
+  MANUAL
+  AUTOMATIC
+  CVT
+  DCT
+  SINGLE_SPEED
+}
+
+enum FeatureCategory {
+  INFOTAINMENT
+  COMFORT
+  CONVENIENCE
+  EXTERIOR
+}
+
+model Make {
+  id      String  @id @default(cuid())
+  slug    String  @unique
+  name    String
+  country String
+  models  Model[]
+}
+
+model Model {
+  id         String    @id @default(cuid())
+  slug       String    @unique
+  name       String
+  makeId     String
+  make       Make      @relation(fields: [makeId], references: [id], onDelete: Cascade)
+  bodyType   BodyType
+  modelYear  Int
+  segment    String
+  summary    String
+  isPopular  Boolean   @default(false)
+  /// Representative photo (self-hosted under /public) and its licence attribution.
+  imageUrl        String?
+  imageAuthor     String?
+  imageLicense    String?
+  imageLicenseUrl String?
+  imageSourceUrl  String?
+  variants   Variant[]
+  review     Review?
+
+  @@index([makeId])
+  @@index([bodyType])
+}
+
+model Variant {
+  id            String         @id @default(cuid())
+  slug          String         @unique
+  name          String
+  modelId       String
+  model         Model          @relation(fields: [modelId], references: [id], onDelete: Cascade)
+  price         Int
+  fuelType      FuelType
+  transmission  Transmission
+  drivetrain    String
+  seats         Int
+  specification Specification?
+  performance   Performance?
+  safetyRating  SafetyRating?
+  ownershipCost OwnershipCost?
+  features      Feature[]
+
+  @@index([modelId])
+  @@index([fuelType])
+}
+
+model Specification {
+  id                String  @id @default(cuid())
+  variantId         String  @unique
+  variant           Variant @relation(fields: [variantId], references: [id], onDelete: Cascade)
+  lengthMm          Int
+  widthMm           Int
+  heightMm          Int
+  wheelbaseMm       Int
+  groundClearanceMm Int?
+  cargoL            Int
+  fuelTankL         Int?
+  batteryKwh        Float?
+  curbWeightKg      Int
+}
+
+model Performance {
+  id                  String  @id @default(cuid())
+  variantId           String  @unique
+  variant             Variant @relation(fields: [variantId], references: [id], onDelete: Cascade)
+  engine              String
+  displacementCc      Int?
+  powerHp             Int
+  torqueNm            Int
+  zeroToHundredS      Float?
+  topSpeedKmh         Int?
+  efficiencyKmpl      Float?
+  rangeKm             Int?
+  consumptionKwh100km Float?
+}
+
+model SafetyRating {
+  id                      String  @id @default(cuid())
+  variantId               String  @unique
+  variant                 Variant @relation(fields: [variantId], references: [id], onDelete: Cascade)
+  agency                  String
+  overallStars            Int?
+  frontalStars            Int?
+  sideStars               Int?
+  rolloverStars           Int?
+  airbags                 Int
+  automaticEmergencyBrake Boolean
+  laneKeepAssist          Boolean
+  blindSpotMonitor        Boolean
+  adaptiveCruise          Boolean
+}
+
+model OwnershipCost {
+  id                String  @id @default(cuid())
+  variantId         String  @unique
+  variant           Variant @relation(fields: [variantId], references: [id], onDelete: Cascade)
+  serviceIntervalKm Int
+  serviceCost       Int
+  annualInsurance   Int
+  warrantyYears     Int
+  warrantyKm        Int
+  resaleValuePct5y  Int
+}
+
+model Feature {
+  id        String          @id @default(cuid())
+  variantId String
+  variant   Variant         @relation(fields: [variantId], references: [id], onDelete: Cascade)
+  name      String
+  category  FeatureCategory
+
+  @@unique([variantId, name])
+}
+
+model Review {
+  id      String   @id @default(cuid())
+  modelId String   @unique
+  model   Model    @relation(fields: [modelId], references: [id], onDelete: Cascade)
+  rating  Float
+  verdict String
+  pros    String[]
+  cons    String[]
+}

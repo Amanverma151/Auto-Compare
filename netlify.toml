@@ -1,0 +1,17 @@
+# Netlify deployment (see CLAUDE.md §8). Netlify's Next.js adapter is applied automatically.
+# Database: Netlify Database (provisioned because @netlify/database is installed); the app reads
+# NETLIFY_DB_URL. Schema changes use Prisma Migrate as an explicit release step (`pnpm db:deploy`),
+# not Netlify-managed migrations, so there is no netlify/database/migrations directory.
+[build]
+  # The build never touches the database (pages stream data at request time).
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "24"
+  NEXT_TELEMETRY_DISABLED = "1"
+  # Inlined at build time (metadata / share links). Build env takes precedence over a local .env.
+  NEXT_PUBLIC_SITE_URL = "https://auto-compare-w6mp.netlify.app"
+
+# Runtime-only settings (e.g. DATABASE_POOL_MAX=3) are site environment variables:
+#   netlify env:set DATABASE_POOL_MAX 3
